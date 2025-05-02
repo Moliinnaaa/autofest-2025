@@ -65,7 +65,7 @@ header {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: url(imagenes/KDD coches.jpg) no-repeat center/cover;
+    background: url(imagenes/Cochesfondo.jpg) no-repeat center/cover;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
