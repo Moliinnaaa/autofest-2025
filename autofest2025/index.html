@@ -1,31 +1,82 @@
-<xaiArtifact artifact_id="44719335-c113-4fdf-92e7-d7aea19fff3c" artifact_version_id="73ca0208-01ab-4461-9505-1cf9dd392588" title="index.html" contentType="text/html"> <!DOCTYPE html> <html lang="es"> 
-    <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>AutoFest 2025</title> <link rel="stylesheet" href="styles.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet"> </head> 
-    <body> 
-        <header> 
-            <nav> 
-                <div class="logo">AutoFest 2025</div> 
-                <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="entradas.html">Entradas</a></li>
-                    <li><a href="participar.html">Participar</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="coches.html">Coches</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>     
-                <div class="hamburger"> 
-                    <i class="fas fa-bars"></i> 
-                </div> 
-            </nav> 
-        </header> 
-        <main> 
-            <section class="hero"> 
-                <h1>AutoFest 2025</h1> 
-                <p>¡El mayor evento de coches del año! 15-17 de agosto, 2025</p> <a href="entradas.html" class="btn">Comprar Entradas</a> </section> 
-        </main> 
-        <footer> <p>© 2025 AutoFest. Todos los derechos reservados.</p> <div class="social"> <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> </div> 
-        </footer> 
-        <script src="script.js"></script> 
-    </body> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFest 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- Añadir Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AutoFest 2025</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="entradas.html">Entradas</a></li>
+                <li><a href="participar.html">Participar</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="coches.html">Coches</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>AutoFest 2025</h1>
+            <p>¡El mayor evento de coches del año! 15-17 de agosto, 2025</p>
+            <!-- Añadir carrusel -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="imagenes/delorean.jpg" alt="DeLorean DMC-12"></div>
+                    <div class="swiper-slide"><img src="imagenes/1989-batmobile-w-b.max-825x550.jpg" alt="Batmobile 1989"></div>
+                    <div class="swiper-slide"><img src="imagenes/dodge charger.jpg" alt="Dodge Charger 1969"></div>
+                    <div class="swiper-slide"><img src="imagenes/mustang.avif" alt="Ford Mustang Mach 1 1969"></div>
+                </div>
+                <!-- Añadir botones de navegación -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Añadir paginación -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <a href="entradas.html" class="btn">Comprar Entradas</a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 AutoFest. Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Añadir Swiper.js JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializar Swiper
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'939643fe9edd44f6',t:'MTc0NjE3NTc2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
 </html>
