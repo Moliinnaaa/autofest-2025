@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas - AutoFest 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AutoFest 2025</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="entradas.html">Entradas</a></li>
+                <li><a href="participar.html">Participar</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="coches.html">Coches</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="entradas">
+            <h1>Compra tus Entradas</h1>
+            <div class="ticket-options">
+                <div class="ticket">
+                    <h3>Entrada General</h3>
+                    <p>Acceso a todas las exhibiciones</p>
+                    <p><strong>20€</strong></p>
+                </div>
+                <div class="ticket">
+                    <h3>Entrada VIP</h3>
+                    <p>Acceso prioritario + zona VIP</p>
+                    <p><strong>50€</strong></p>
+                </div>
+                <div class="ticket">
+                    <h3>Entrada Familiar</h3>
+                    <p>2 adultos + 2 niños</p>
+                    <p><strong>80€</strong></p>
+                </div>
+            </div>
+            <form class="ticket-form">
+                <h2>Simular Compra</h2>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" required>
+                <label for="ticket-type">Tipo de Entrada:</label>
+                <select id="ticket-type" required>
+                    <option value="">Selecciona</option>
+                    <option value="general">General</option>
+                    <option value="vip">VIP</option>
+                    <option value="familiar">Familiar</option>
+                </select>
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" min="1" required>
+                <button type="submit" class="btn">Comprar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 AutoFest. Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
